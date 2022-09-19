@@ -1,0 +1,190 @@
+
+#nixwood-checkout {
+    max-width: 1126px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #e5e5e5;
+    min-height: 391px;
+    font-family: "SansSerif",Arial;
+}
+
+#nixwood-checkout .nixwood__title {
+    color: #dc453c;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#nixwood-checkout .nixwood_form .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+}
+#nixwood-checkout .col{
+    padding: 12px;
+}
+#nixwood-checkout .nixwood_form .nixwood_item{
+    border-radius: 10px;
+    border: 1px solid  #d6daea;
+    background: #fff;
+    padding: 19px;
+    height: 100%;
+}
+#nixwood-checkout .nixwood_form .col-7 {
+    width: 60%;
+}
+#nixwood-checkout .nixwood_form .col-5 {
+    width: 40%;
+}
+
+#nixwood-checkout .nixwood_text{
+    font-size: 15px;
+    line-height: 23px;
+}
+#nixwood-checkout .nixwood_text_bold{
+    font-weight: bold;
+    color: #444444;
+}
+#nixwood-checkout .nixwood_text_normal{
+    font-weight: normal;
+    color: #444444;
+    display: block;
+}
+#nixwood-checkout .nixwood_form_group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#nixwood-checkout .nixwood_form_group:last-child{
+    margin-bottom: 0;
+}
+
+#nixwood-checkout .nixwood_form_group{
+    margin-bottom: 40px;
+}
+
+#nixwood-checkout .nixwood_form_group .checkbox-input{
+    margin-right: 20px;
+}
+#nixwood-checkout .nixwood_form_group .checkbox-input input[type=checkbox]{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    border: 1px solid #d6daea;
+    -webkit-appearance: none;
+    box-shadow: none;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+#nixwood-checkout input[type="checkbox"]:checked::before {
+    content: "";
+    opacity: 1;
+    display: block;
+    left: 9px;
+    top: 5px;
+    position: absolute;
+    width: 5px;
+    height: 8px;
+    border: 1px solid red;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(30deg);
+}
+
+
+.nixwood_quantity{
+    position: absolute;
+    right: 0;
+}
+#nixwood-checkout .nixwood_quantity .minus,#nixwood-checkout .nixwood_quantity .plus{
+    width:20px;
+    height:20px;
+    background:#f2f2f2;
+    border-radius:4px;
+    padding:8px 5px 8px 5px;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    line-height: 0;
+    cursor: pointer;
+}
+#nixwood-checkout .nixwood_quantity input {
+    width: 31px;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+#nixwood-checkout .nixwood_total_texts{
+    padding-bottom: 26px;
+    border-bottom: 2px solid #eaecf4 ;
+}
+#nixwood-checkout .nixwood_order_total{
+    padding-top: 30px;
+}
+#nixwood-checkout .nixwood_order_total_button{
+    margin-top: 80px;
+}
+#nixwood-checkout .nixwood_order_total_button button{
+    display: block;
+    width: 100%;
+
+}
+#nixwood-checkout .nixwood_total_texts .nixwood_total_text,#nixwood-checkout .nixwood_order_total{
+    display: flex;
+    justify-content: space-between;
+}
+#nixwood-checkout .nixwood_order_total_button button.btn{
+    border-radius: 10px;
+    height: 50px;
+    /* line-height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#nixwood-checkout .nixwood_order_total_button button.btn-silver{
+    max-width: 200px;
+    background: #f2f3f5;
+    color: #444444;
+
+}
+#nixwood-checkout .nixwood_order_total_button button.btn-red{
+    background: #eb0033;
+    color: #fff;
+}
+#nixwood-checkout .nixwood_order_total .nixwood_text{
+    font-size: 20px!important;
+
+}
+#nixwood-checkout.nixwood_order_total .nixwood_text:last-child{
+    color: #eb0033!important;
+}
+
+#nixwood-checkout .hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+#nixwood-checkout .nixwood_total  .nixwood_order_total_button button:last-child{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #nixwood-checkout .nixwood_form .col-7,#nixwood-checkout .nixwood_form .col-5{
+        width: 100%;
+    }
+    #nixwood-checkout .mobile-hide{
+        display: none;
+    }
+    #nixwood-checkout .nixwood_order_total_button button.btn-silver{
+        display: block!important;
+        margin: 20px auto auto auto;
+        background: transparent;
+    }
+}
